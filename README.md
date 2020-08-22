@@ -6,4 +6,4 @@ I did this one for my studying about Neural Networks.
 
 ## About cs231n
 See the GitHub page https://github.com/cs231n
-The course page http://vision.stanford.edu/teaching/cs231n/
+,the course page http://vision.stanford.edu/teaching/cs231n/
