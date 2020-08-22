@@ -7,3 +7,9 @@ I did this one for my studying about Neural Networks.
 ## About cs231n
 See the GitHub page https://github.com/cs231n
 ,the course page http://vision.stanford.edu/teaching/cs231n/
+
+## Order
+1. Fully-connected Neural Network
+2. Batch Normalization
+3. Convolutional Networks
+4. PyTorch on CIFAR-10
