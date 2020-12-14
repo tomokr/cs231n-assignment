@@ -53,7 +53,7 @@ def affine_bn_relu_forward(x, w, b, gamma, beta, bn_param):
 def affine_bn_relu_backward(dout, cache):
     fc_cache, bn_cache, relu_cache = cache
     da = relu_backward(dout, relu_cache)
-    dx_bn, dgamma, dbeta = batchnorm_backward(da, bn_cache)
+    dx_bn, dgamma, dbeta = batchnorm_backward_alt(da, bn_cache)
     dx, dw, db = affine_backward(dx_bn, fc_cache)
     return dx, dw, db, dgamma, dbeta
 
@@ -97,7 +97,7 @@ def conv_bn_relu_forward(x, w, b, gamma, beta, conv_param, bn_param):
 def conv_bn_relu_backward(dout, cache):
     conv_cache, bn_cache, relu_cache = cache
     dan = relu_backward(dout, relu_cache)
-    da, dgamma, dbeta = spatial_batchnorm_backward(dan, bn_cache)
+    da, dgamma, dbeta = spatial_batchnorm_backward_alt(dan, bn_cache)
     dx, dw, db = conv_backward_fast(da, conv_cache)
     return dx, dw, db, dgamma, dbeta
 

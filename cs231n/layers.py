@@ -313,7 +313,8 @@ def batchnorm_backward_alt(dout, cache):
     # dx = dout * (1.0/(N*sigma) * (N -1. - x_nom**2))
     dgamma = np.sum(dout * x_nom, axis=0)
     dbeta = np.sum(dout, axis=0)
-    dx = (gamma*sigma/N) * (N*dout - x_nom*dgamma - dbeta)
+    dx = (gamma / N) * (N*dout - x_nom*dgamma - dbeta) / sigma 
+    # at first, I multiplied by sigma but it's correct dividing.
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
