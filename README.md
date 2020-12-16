@@ -13,3 +13,5 @@ See the GitHub page https://github.com/cs231n
 2. Batch Normalization
 3. Convolutional Networks
 4. PyTorch on CIFAR-10
+
+    [You can see the notebook contains results here](https://www.kaggle.com/tomoshimo/pytorch-cs231n)
