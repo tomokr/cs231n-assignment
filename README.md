@@ -9,9 +9,9 @@ See the GitHub page https://github.com/cs231n
 ,the course page http://vision.stanford.edu/teaching/cs231n/
 
 ## Order
-1. Fully-connected Neural Network
-2. Batch Normalization
-3. Convolutional Networks
+1. [Fully-connected Neural Network](https://github.com/tomokr/cs231n-assignment/blob/master/FullyConnectedNets.ipynb)
+2. [Batch Normalization](https://github.com/tomokr/cs231n-assignment/blob/master/BatchNormalization.ipynb)
+3. [Convolutional Networks](https://github.com/tomokr/cs231n-assignment/blob/master/ConvolutionalNetworks.ipynb)
 4. PyTorch on CIFAR-10
 
     [You can see the notebook contains results here](https://www.kaggle.com/tomoshimo/pytorch-cs231n)
